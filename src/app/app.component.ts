@@ -11,4 +11,16 @@ export class AppComponent {
   
   constructor(private router: Router) {};
   currRoute = this.router.url;
+  
+  goToShop() {
+    this.router.navigate(['my-shop']);
+  }
+
+  goToCart() {
+    this.router.navigate(['cart']);
+  }
+
+  goToProfile() {
+    this.router.navigate(['profile'])
+  }
 }

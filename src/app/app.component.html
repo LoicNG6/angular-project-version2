@@ -1,7 +1,13 @@
-<div style="height: 100vh;">
-        
-    <!-- <app-myshop-cards *ngIf="router.url"></app-myshop-cards>
-    <app-cart></app-cart>
-    <app-profile></app-profile> -->
-</div>
+<mat-grid-list cols="12" style=" color: aliceblue; background-color: rgb(41, 78, 142);" rowHeight="70px">
+    <mat-grid-tile style="border-right: solid 0.01em rgba(255, 255, 255, 0.5);">
+          <button (click)="goToShop()" mat-button>MyShop</button>
+    </mat-grid-tile>
+    <mat-grid-tile style="border-right: solid 0.01em rgba(255, 255, 255, 0.5);">
+          <button (click)="goToCart()" mat-button>Cart</button>
+    </mat-grid-tile>
+    <mat-grid-tile style="border-right: solid 0.01em rgba(255, 255, 255, 0.5);">
+          <button (click)="goToProfile()" mat-button>Profile</button>
+    </mat-grid-tile>
+</mat-grid-list>
+
 <router-outlet></router-outlet>

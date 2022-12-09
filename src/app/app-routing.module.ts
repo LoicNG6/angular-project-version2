@@ -6,13 +6,13 @@ import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'my-shop', pathMatch: 'full' },
-  { path: 'my-shop', title:'my-shop', component: MyshopCardsComponent },
-  { path: 'cart', title:'my-shop', component: CartComponent },
-  { path: 'profile', title:'profile', component: ProfileComponent },
+  { path: 'my-shop', title: 'my-shop', component: MyshopCardsComponent },
+  { path: 'cart', title: 'my-shop', component: CartComponent },
+  { path: 'profile', title: 'profile', component: ProfileComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

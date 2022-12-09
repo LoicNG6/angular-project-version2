@@ -88,17 +88,4 @@ export class MyshopCardsComponent {
     this.samsungS22,
     this.samsungNote10,
   ];
-
-  constructor(private router: Router) { }
-  goToShop() {
-    this.router.navigate(['my-shop']);
-  }
-
-  goToCart() {
-    this.router.navigate(['cart']);
-  }
-
-  goToProfile() {
-    this.router.navigate(['profile'])
-  }
 }
