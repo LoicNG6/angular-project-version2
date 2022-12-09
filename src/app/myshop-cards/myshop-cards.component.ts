@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Article } from './articles';
 import { Specification } from './specifications';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-myshop-cards',
@@ -86,5 +87,18 @@ export class MyshopCardsComponent {
     this.airpods,
     this.samsungS22,
     this.samsungNote10,
-  ]
+  ];
+
+  constructor(private router: Router) { }
+  goToShop() {
+    this.router.navigate(['my-shop']);
+  }
+
+  goToCart() {
+    this.router.navigate(['cart']);
+  }
+
+  goToProfile() {
+    this.router.navigate(['profile'])
+  }
 }

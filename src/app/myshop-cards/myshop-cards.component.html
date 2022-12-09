@@ -1,4 +1,15 @@
-<mat-grid-list style="margin-top: 15%;" rowHeight="400px" cols="5">
+<mat-grid-list cols="12" style=" color: aliceblue; background-color: rgb(41, 78, 142);" rowHeight="70px">
+      <mat-grid-tile style="border-right: solid 0.01em rgba(255, 255, 255, 0.5);">
+            <button (click)="goToShop()" mat-button>MyShop</button>
+      </mat-grid-tile>
+      <mat-grid-tile style="border-right: solid 0.01em rgba(255, 255, 255, 0.5);">
+            <button (click)="goToCart()" mat-button>Cart</button>
+      </mat-grid-tile>
+      <mat-grid-tile style="border-right: solid 0.01em rgba(255, 255, 255, 0.5);">
+            <button (click)="goToProfile()" mat-button>Profile</button>
+      </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list style="margin-top: 10%;" rowHeight="400px" cols="5">
       <mat-grid-tile *ngFor="let article of articles">
             <app-card [article]="article" [specifications]="article.specification"></app-card>
       </mat-grid-tile>
