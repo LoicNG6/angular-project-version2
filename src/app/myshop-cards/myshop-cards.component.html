@@ -1,0 +1,5 @@
+<mat-grid-list style="margin-top: 15%;" rowHeight="400px" cols="5">
+      <mat-grid-tile *ngFor="let article of articles">
+            <app-card [article]="article" [specifications]="article.specification"></app-card>
+      </mat-grid-tile>
+</mat-grid-list>

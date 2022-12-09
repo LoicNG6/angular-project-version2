@@ -1,0 +1,29 @@
+<mat-card style="
+            background: rgb(234, 233, 233);
+            width: 250px;
+            height: 350px;
+            text-align: center;
+            border-radius: 10%;
+            border:0.2em solid gainsboro">
+      <mat-card-content style=" height:35%;">
+            <img [src]="article.img" alt="image" />
+            <!-- <img src="iphone12.png" alt="..." /> -->
+      </mat-card-content>
+      <mat-card-title style=" height: 10%;">
+            {{ article.name }}
+      </mat-card-title>
+      <mat-card-content style="margin-top: 5px; text-align: left; height:40%;">
+            Spécifications
+            <ul>
+                  <li>Color: {{ specifications.color }}</li>
+                  <li>Weight: {{ specifications.weight }}</li>
+                  <li>Storage: {{ specifications.storage }}</li>
+                  <li>Price: {{ specifications.price }}</li>
+            </ul>
+      </mat-card-content>
+      <mat-card-content style=" height:10%;">
+            <button mat-raised-button style="background-color: rgb(40, 40, 83); color: aliceblue;">
+                  Add to card
+            </button>
+      </mat-card-content>
+</mat-card>
