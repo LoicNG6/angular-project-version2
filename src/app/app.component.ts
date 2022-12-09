@@ -10,7 +10,6 @@ export class AppComponent {
   title = 'exoCardPrinting';
   
   constructor(private router: Router) {};
-  currRoute = this.router.url;
   
   goToShop() {
     this.router.navigate(['my-shop']);
