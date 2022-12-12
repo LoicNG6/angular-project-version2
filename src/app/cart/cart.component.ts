@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CardComponent } from '../card/card.component';
 
 @Component({
   selector: 'app-cart',
@@ -8,8 +9,16 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CartComponent {
   constructor(private route: ActivatedRoute) { }
+
+  // cart: Array<any> = [];
+
   ngOnInit() {
-    const test = this.route.snapshot.queryParamMap.get('male');
-    console.log("test", test);
+    localStorage.removeItem("cart");
+    localStorage.setItem("cart", JSON.stringify(CardComponent.carts));
+    console.log('bonjour');
+    console.log("bonjour CardComponent.cart : ", CardComponent.carts);
+    // let db = localStorage.getItem("cart");
+    // this.cart = db !== null ? JSON.parse(db) : null;
+    // console.log("db = ", this.cart);
   }
 }

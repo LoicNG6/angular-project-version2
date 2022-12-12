@@ -18,6 +18,7 @@ export class MyshopCardsComponent {
   };
 
   readonly iphone12: Article = {
+    id: 0,
     img: "/src/assets/car_pictures/iphone12.png",
     name: "Iphone 12",
     specification: this.iphone12Specifications,
@@ -32,6 +33,7 @@ export class MyshopCardsComponent {
   };
 
   readonly iphone14: Article = {
+    id:1,
     img: "/src/assets/car_pictures/iphone14.jpg",
     name: "Iphone 14",
     specification: this.iphone14Specifications,
@@ -46,6 +48,7 @@ export class MyshopCardsComponent {
   };
 
   readonly airpods: Article = {
+    id:2,
     img: "/src/assets/car_pictures/airpodsPro.jpg",
     name: "Airpods",
     specification: this.airpodsSpecifications,
@@ -60,6 +63,7 @@ export class MyshopCardsComponent {
   };
 
   readonly samsungS22: Article = {
+    id: 3,
     img: "/src/assets/car_pictures/samsungs22.jpg",
     name: "Samsung S22",
     specification: this.samsungS22Specifications,
@@ -74,6 +78,7 @@ export class MyshopCardsComponent {
   };
 
   readonly samsungNote10: Article = {
+    id: 4,
     img: "/src/assets/car_pictures/samsugS10.jpg",
     name: "Samsung Note 10",
     specification: this.samsungNote10Specifications,

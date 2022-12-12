@@ -1,11 +1,11 @@
 <mat-card style="
             background: rgb(234, 233, 233);
-            width: 250px;
+            width: 290px;
             height: 350px;
             text-align: center;
             border-radius: 10%;
             border:0.2em solid gainsboro">
-      <mat-card-content style=" height:35%;">
+      <mat-card-content style=" height:25%;">
             <img [src]="article.img" alt="image" />
             <!-- <img src="iphone12.png" alt="..." /> -->
       </mat-card-content>
@@ -22,8 +22,25 @@
             </ul>
       </mat-card-content>
       <mat-card-content style=" height:10%;">
-            <button (click)="addInCart()" mat-raised-button style="background-color: rgb(40, 40, 83); color: aliceblue;">
-                  Add to card
-            </button>
+            <mat-grid-list cols="3" rowHeight="130%">
+                  <mat-grid-tile colspan="1">
+                        <button (click)="removeFroCarts()" mat-fab style="
+                        background-color: rgb(210, 45, 45);
+                        color: aliceblue;">
+                              <mat-icon>delete</mat-icon>
+                        </button>
+                  </mat-grid-tile>
+                  <mat-grid-tile colspan="0.5">
+                        <div *ngIf="quantity > 0">({{ quantity }})</div>
+                  </mat-grid-tile>
+                  <mat-grid-tile colspan="1">
+                        <button (click)="addInCarts()" mat-fab style="
+                        background-color: rgb(63, 154, 81);
+                        color: aliceblue;
+                        ">
+                              <mat-icon>add</mat-icon>
+                        </button>
+                  </mat-grid-tile>
+            </mat-grid-list>
       </mat-card-content>
 </mat-card>
