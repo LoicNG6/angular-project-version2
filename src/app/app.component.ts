@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CardComponent } from './card/card.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,9 @@ export class AppComponent {
   }
 
   goToCart() {
+    localStorage.removeItem("cart");
+    let articles = CardComponent.articles;
+    localStorage.setItem("cart", JSON.stringify(articles));
     this.router.navigate(['cart']);
   }
 

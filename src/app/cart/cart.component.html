@@ -1,1 +1,7 @@
-<p>cart works!</p>
+<ul *ngFor="let c of cart" style="margin-top: 10%;">
+      <li>Id = {{ c["article"]["id"] }}</li>
+      <li>image path = {{ c["article"]["img"] }}</li>
+      <li>name = {{ c["article"]["name"] }}</li>
+      <li>specifications = {{ c["article"]["specification"] }}</li>
+      <li>quantité = {{ c["quantity"] }}</li>
+</ul>
